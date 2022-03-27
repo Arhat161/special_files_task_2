@@ -58,7 +58,7 @@ public class Main {
         return null;
     }
 
-    private static List<Employee> parseXML(String xmlFileName) {
+    public static List<Employee> parseXML(String xmlFileName) {
 
         try {
             List<Employee> list = new ArrayList<>();
