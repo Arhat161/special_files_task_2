@@ -92,17 +92,9 @@ public class Main {
         return null;
     }
 
-    /*public static <T> Object listToJson(List<T> list) {
-        GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.create();
-        Type listType = new TypeToken<List<T>>() {
-        }.getType();
-        return gson.toJson(list, listType);
-    }*/
-
     public static String listToJson(List<Employee> list) {
         GsonBuilder builder = new GsonBuilder();
-        Gson gson = builder.create();
+        Gson gson = builder.setPrettyPrinting().create();
         return gson.toJson(list);
     }
 
